@@ -1,0 +1,31 @@
+title = "The Example Recipe"
+date_added = 2018-01-01
+author = "authorname"
+type = "dinner"
+cook_time = 10
+prep_time = 10
+
+ingredients = [
+"1 package of steak",
+"Lowry's",
+]
+
+yield = "2 steaks"
+serving_size = "1 steak"
+
+directions = """
+Put steaks on hot grill and cook until brown.
+"""
+
+[nutrition]
+calories = 1200
+total_fat = 10
+saturated_fat = 10
+trans_fat = 10
+cholesterol = 10
+sodium = 10
+total_carbohydrates = 10
+fiber = 10
+sugars = 10
+protein = 10
+unsaturated_fat = 10
