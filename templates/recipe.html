@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ recipe["title"] }} | CLT Devs Recipes{% endblock %}
+
+{% block body %}
+<h1 class="mt-4">{{ recipe["title"] }}</h1>
+<p>{{ recipe["type"]|title }} | Submitted by {{ recipe["author"] }} on {{ recipe["date_added"] }}</p>
+<hr>
+<p class="lead">{{ recipe["description"] }}</p>
+<h3>Ingredients</h3>
+<ul class="list-group">
+{% for ingredient in recipe["ingredients"] %}
+   <li class="list-group-item">{{ ingredient }}</li>
+{% endfor %}
+</ul>
+<hr>
+{% if "cook_time" in recipe %}
+<p>Cook time: {{ recipe["cook_time"] }}</p>
+{% endif %}
+{% if "prep_time" in recipe %}
+<p>Prep time: {{ recipe["prep_time"] }}</p>
+{% endif %}
+{% if "yield" in recipe %}
+<p>Yield: {{ recipe["yield"] }}</p>
+{% endif %}
+{% if "serving_size" in recipe %}
+<p>Serving size: {{ recipe["serving_size"] }}</p>
+{% endif %}
+<p>{{ recipe["directions"] }}</p>
+<hr>
+<p>TODO: write the nutrition values with proper schema.org tagging</p>
+{% endblock %}

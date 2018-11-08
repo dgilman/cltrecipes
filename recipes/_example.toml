@@ -5,6 +5,8 @@ type = "dinner"
 cook_time = 10
 prep_time = 10
 
+description = "A nice rare steak on the grill is a treat for carnivores everywhere."
+
 ingredients = [
 "1 package of steak",
 "Lowry's",

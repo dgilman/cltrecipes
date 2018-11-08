@@ -4,6 +4,8 @@ author = "dgilman"
 type = "breakfast"
 cook_time = 30
 
+description = """This is my family's recipe for sweet crepes. We serve them as a meal, eating them one-by-one as they come off the pan."""
+
 ingredients = [
 "2 eggs",
 "1/3 cup of sugar",
